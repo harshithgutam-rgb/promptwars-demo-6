@@ -80,7 +80,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       {/* Desktop Floating Liquid Glass Header Navigation (Matches Approved Desktop Stitch) */}
       <header className="pointer-events-none fixed inset-x-0 top-0 z-50 hidden md:block">
         <div className="pointer-events-auto mx-auto max-w-7xl px-6 pt-4">
-          <div className="liquid-glass flex h-20 items-center justify-between gap-4 rounded-full px-5 lg:px-6">
+          <div className="liquid-glass liquid-glass-header flex h-20 items-center justify-between gap-4 rounded-full px-5 lg:px-6">
             {/* Brand & Version */}
             <Link
               href="/"
@@ -209,7 +209,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             aria-label="Tablet navigation"
             className="no-scrollbar mt-2 flex items-center gap-1.5 overflow-x-auto xl:hidden"
           >
-            <div className="liquid-pill mx-auto flex items-center gap-1 rounded-full p-1">
+            <div className="liquid-pill liquid-glass-header-pill mx-auto flex items-center gap-1 rounded-full p-1">
               {DESKTOP_NAV_ITEMS.map((item) => {
                 const isActive = pathname === item.href;
                 return (
